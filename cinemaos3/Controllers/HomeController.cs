@@ -1,6 +1,7 @@
 ﻿using cinemaos3.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using MySql.Data;
 
 namespace cinemaos3.Controllers
 {
