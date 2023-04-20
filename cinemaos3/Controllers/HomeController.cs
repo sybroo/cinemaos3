@@ -32,13 +32,25 @@ namespace cinemaos3.Controllers
             return View(names);
         }
 
+        [Route("Privacy")]
         public IActionResult Privacy()
         {
             return View();
         }
 
+        [Route("Contact")]
         public IActionResult Contact()
+        { 
+        return View();
+        }
+
+        [HttpPost]
+        [Route("Contact")]
+        public IActionResult Contact(Person person)
         {
+            ViewData["firstname"] = person.FirstName;
+            ViewData["lastname"] = person.LastName;
+
             return View();
         }
 

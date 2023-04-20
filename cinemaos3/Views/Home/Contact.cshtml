@@ -3,4 +3,11 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Contact pagina.</p>
+<form method="post">
+    Voornaam: <input type="text" name="firstname" />
+    Achternaam: <input type="text" name="lastname" />
+    <input type="submit" value="verstuur" />
+
+    <p> Hallo @ViewData["firstname"] @ViewData["lastname"] bedankt voor het versturen </p>
+
+</form>
