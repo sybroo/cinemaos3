@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using cinemaos3.Database;
+// using cinemaos3.Database;
 using cinemaos3.Models;
 using System.Diagnostics;
 
@@ -16,7 +16,8 @@ namespace cinemaos3.Controllers
 
         public IActionResult Index()
         {
-            // alle producten ophalen
+            /*
+             // alle producten ophalen
             var rows = DatabaseConnector.GetRows("select * from cinemaos");
 
             // lijst maken om alle namen in te stoppen
@@ -30,6 +31,8 @@ namespace cinemaos3.Controllers
 
             // de lijst met namen in de html stoppen
             return View(names);
+            */
+            return View();
         }
 
         [Route("Privacy")]
@@ -40,8 +43,8 @@ namespace cinemaos3.Controllers
 
         [Route("Contact")]
         public IActionResult Contact()
-        { 
-        return View();
+        {
+            return View();
         }
 
         [HttpPost]
