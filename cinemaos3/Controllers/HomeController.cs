@@ -51,10 +51,10 @@ namespace cinemaos3.Controllers
         [Route("Contact")]
         public IActionResult Contact(Person person)
         {
-            ViewData["firstname"] = person.FirstName;
-            ViewData["lastname"] = person.LastName;
-
-            return View();
+            if (ModelState.IsValid)
+                return Redirect("/succes");
+            
+                    return View(person);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

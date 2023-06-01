@@ -1,7 +1,10 @@
-﻿namespace cinemaos3.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace cinemaos3.Models
 {
     public class Person
     {
+        [Required]
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }

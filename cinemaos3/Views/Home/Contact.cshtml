@@ -4,10 +4,18 @@
 <h1>@ViewData["Title"]</h1>
 
 <form method="post">
-    Voornaam: <input type="text" name="firstname" />
-    Achternaam: <input type="text" name="lastname" />
+    <div>Voornaam: <input type="text" name="firstname" /></div>
+    <div>Achternaam: <input type="text" name="lastname" /></div>
+    <div>E-mail: <input type="text" name="e-mail" /></div>
+    <div>Telefoon: <input type="text" name="phonenumber" /></div>
+    <div>Address: <input type="text" name="address" /></div>
+    <div>bericht: <input type="text" name="message" /></div>
+    
+
+
     <input type="submit" value="verstuur" />
 
+@if(Model!= null){
     <p> Hallo @ViewData["firstname"] @ViewData["lastname"] bedankt voor het versturen </p>
-
+}
 </form>
