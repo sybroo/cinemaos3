@@ -1,15 +1,20 @@
-﻿@{
+﻿@model cinemaos3.Models.Person
+@{
     ViewData["Title"] = "Contact";
 }
 <h1>@ViewData["Title"]</h1>
 
 <form method="post">
     <div>Voornaam: <input type="text" name="firstname" /></div>
+    @Html.ValidationMessageFor(m => m.FirstName)
     <div>Achternaam: <input type="text" name="lastname" /></div>
+    @Html.ValidationMessageFor(m => m.LastName)
     <div>E-mail: <input type="text" name="e-mail" /></div>
+    @Html.ValidationMessageFor(m => m.Email)
     <div>Telefoon: <input type="text" name="phonenumber" /></div>
     <div>Address: <input type="text" name="address" /></div>
     <div>bericht: <input type="text" name="message" /></div>
+    @Html.ValidationMessageFor(m => m.Message)
     
 
 
