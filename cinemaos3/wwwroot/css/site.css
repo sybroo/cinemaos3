@@ -8,13 +8,53 @@ html {
   }
 }
 
+header {
+    background: #FAC125;
+}
+
+nav ul{
+    margin-left: 12%;
+    margin-right: auto;
+}
+
+nav li {
+    display: incline-block;
+    height: 100%;
+    width: 10%;
+    margin-left: 180px;
+    text-align: center;
+}
+
+nav li a{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+li:hover a {
+    fill: #000000;
+    background: #E1A605;
+    border-radius: 5px;
+}
+
+.avatar{
+    width: 260px;
+    height: 370px;
+    align-content: center;
+}
+
+
+
+
+
 html {
   position: relative;
   min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background: #000000;
 }
 
 .contactform label {
