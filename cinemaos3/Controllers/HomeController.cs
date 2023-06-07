@@ -52,10 +52,17 @@ namespace cinemaos3.Controllers
         public IActionResult Contact(Person person)
         {
             if (ModelState.IsValid)
-                return Redirect("/succes");
+                return Redirect("succes");
             
                     return View(person);
         }
+
+        [Route("succes")]
+        public IActionResult Succes()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
