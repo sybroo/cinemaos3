@@ -2,6 +2,7 @@
 
 namespace cinemaos3.Models
 {
+
     public class Person
     {
         [Required(ErrorMessage = "Gelieve uw voornaam in te vullen")]

@@ -43,6 +43,30 @@ li:hover a {
     align-content: center;
 }
 
+.johnwick4{
+    width: 300px;
+    height: 424px;
+}
+
+.gotg3 {
+    width: 300px;
+    height: 424px;
+}
+
+.mario {
+    width: 300px;
+    height: 424px;
+}
+
+.topgun {
+    width: 300px;
+    height: 424px;
+}
+
+.puss {
+    width: 300px;
+    height: 424px;
+}
 
 
 
@@ -64,4 +88,26 @@ body {
 .contactform .field-validation-error {
     color: red;
     margin-left: 10px;
+}
+
+.TitelFilm {
+    color: white;
+    font-size: 40px;
+}
+
+.DescriptionFilm{
+    color: white;
+    font-size: 20px;
+}
+
+.PosterFilm{
+    color: white;
+}
+
+.CastFilm{
+    color: white;
+}
+
+.AgeFilm{
+    color: white;
 }
