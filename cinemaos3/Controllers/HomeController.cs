@@ -49,8 +49,8 @@ namespace cinemaos3.Controllers
             return View();
         }
 
-        [Route("Privacy")]
-        public IActionResult Privacy()
+        [Route("OverOns")]
+        public IActionResult OverOns()
         {
             return View();
         }

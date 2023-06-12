@@ -6,12 +6,17 @@ html {
 body {
     margin-bottom: 60px;
     background: #000000;
+    text-align: center;
+}
+.contactform{
+    text-align: left; 
+    margin-left: 400px;
 }
 
 .contactform label {
-    width: 100px;
+    width: 300px;
     align-items: center;
-    font-size: 50px;
+    font-size: 25px;
     color: white;
 }
 
@@ -22,10 +27,12 @@ body {
 
 h1 {
     color: azure;
+    font-size: 50px;
 }
 
 p {
     color: azure;
+    font-size: 30px;
 }
 
 @media (min-width: 768px) {

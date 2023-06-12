@@ -2,9 +2,10 @@
 @{
     ViewData["Title"] = "Contact";
 }
-<h1>@ViewData["Title"]</h1>
+
 
 <form method="post" class="contactform">
+    <h1>@ViewData["Title"]</h1>
   <div class="form-group">
     @Html.LabelFor(m => m.FirstName)
     @Html.TextBoxFor(m => m.FirstName)
@@ -41,7 +42,3 @@
 
   <input type="submit" value="verstuur" />
 </form>
-
-@if(Model!= null){
-  <p>Hallo @Model.FirstName @Model.LastName</p>
-}
